@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Odpowiedzi o JavaScript</title>
+    <script>
+        // Jedyna funkcja: zamknięcie okna
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <h1>Odpowiedzi o JavaScript</h1>
+
+    <p><strong>1) kiedy powstał JavaScript (podaj datę):</strong> 1995 rok</p>
+
+    <p><strong>2) dlaczego jest to język skryptowy:</strong> Ponieważ jest interpretowany – nie trzeba go kompilować do kodu maszynowego, działa od razu w przeglądarce.</p>
+
+    <p><strong>3) gdzie jest wykonywany JS (klient lub serwer):</strong> Po stronie klienta (w przeglądarce), ale dzięki Node.js może też działać na serwerze.</p>
+
+    <p><strong>4) dlaczego jest JS to bezpieczne narzędzie:</strong> Bo ma ograniczony dostęp do zasobów komputera użytkownika – nie może swobodnie ingerować w system.</p>
+
+    <p><strong>5) czy jest to język obiektowy, jeśli tak to dlaczego:</strong> Tak, bo używa obiektów, metod i zdarzeń oraz działa w oparciu o DOM (Document Object Model).</p>
+
+    <h2>6) zalety JS:</h2>
+    <ul>
+        <li><strong>Zaleta 1:</strong> Prosty i łatwy do nauki.</li>
+        <li><strong>Zaleta 2:</strong> Uniwersalny i bardzo popularny – mnóstwo gotowych przykładów i bibliotek.</li>
+        <li><strong>Zaleta 3:</strong> Pozwala tworzyć dynamiczne, interaktywne strony i aplikacje (np. bez przeładowania strony – AJAX).</li>
+    </ul>
+
+    <p><strong>7) Framework to:</strong> Program/narzędzie wspierające tworzenie innych programów w JS (np. React, Angular, Vue).</p>
+
+    <p><strong>8) Do aplikacji mobilnych można użyć Framework:</strong> React Native.</p>
+
+    <p><strong>9) Aplikacje responsywne to:</strong> Takie, które dostosowują się do różnych rozmiarów ekranów (telefon, tablet, komputer).</p>
+
+    <h2>10) Przykład kodu HTML z wytłumaczeniem:</h2>
+    <pre>
+&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen()"&gt;
+    </pre>
+    <p>Ta linia tworzy przycisk o nazwie "Nowa Strona". Po kliknięciu uruchamia funkcję <code>WinOpen()</code>, która otwiera nowe okno (lub stronę) w przeglądarce.</p>
+
+    <h2>11) Przepisz linię kodu i wytłumaczenie:</h2>
+    <pre>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+    </pre>
+    <p>Wytłumaczenie linii kodu: &rsaquo; Otwiera nowe okno przeglądarki z plikiem <code>obraz.html</code>, nadając mu nazwę "okienko" i ustawiając parametry wyglądu i położenia.</p>
+
+    <h3>Parametry:</h3>
+    <ul>
+        <li><strong>toolbar=no &rsaquo;</strong> Ukrywa pasek narzędzi przeglądarki.</li>
+        <li><strong>directories=no &rsaquo;</strong> Ukrywa przyciski katalogów / folderów.</li>
+        <li><strong>menubar=no &rsaquo;</strong> Ukrywa pasek menu przeglądarki.</li>
+        <li><strong>height=280 &rsaquo;</strong> Ustawia wysokość okna na 280 pikseli.</li>
+        <li><strong>width=160 &rsaquo;</strong> Ustawia szerokość okna na 160 pikseli.</li>
+        <li><strong>top=200 &rsaquo;</strong> Ustawia pozycję okna od góry ekranu na 200 pikseli.</li>
+        <li><strong>left=200 &rsaquo;</strong> Ustawia pozycję okna od lewej krawędzi ekranu na 200 pikseli.</li>
+    </ul>
+
+    <h2>12) Opisz następującą instrukcję window.close()</h2>
+    <p>&rsaquo; Funkcja <code>window.close()</code> zamyka aktualne okno przeglądarki. Działa tylko, jeśli okno zostało otwarte przez JavaScript (np. przez <code>window.open()</code>).</p>
+
+    <!-- Jedyny przycisk JS w pliku -->
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
