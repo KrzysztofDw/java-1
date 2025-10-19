@@ -1,0 +1,34 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             } 
+ 22 
+      </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="80" rows="20" readonly> 
+  
+                      przyklad3.html 
+ 
+            <HTML> 
+             <HEAD> 
+                  <TITLE>SKRYPT trzeci --> zewnętrzny</TITLE> 
+             </HEAD> 
+     <BODY> 
+            <SCRIPT type="text/javascript" src="przyklad3_zewnetrzny.js"></SCRIPT> 
+   </BODY> 
+</HTML> 
+przyklad3_zewnetrzny.js 
+             document.write("ostatnia modyfikacja strony".fontcolor("red").bold().fontsize(7)+"<br>"); 
+             document.write(document.lastModified); 
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Ile sekund</title>
+<style>
+  .wynik {
+    color: green;
+    font-size: 30px;
+  }
+</style>
+</head>
+<body>
+  <script>
+    // Wczytaj dni
+    var D1 = parseInt(prompt("Podaj pierwszy dzień (D1):"));
+    var D2 = parseInt(prompt("Podaj drugi dzień (D2):"));
+
+    // Oblicz różnicę w dniach
+    var roznicaDni = Math.abs(D1 - D2);
+
+    // 1 dzień = 24h * 60min * 60s
+    var ileSekund = roznicaDni * 24 * 60 * 60;
+
+    // Wyświetl
+    document.write("<div class='wynik'>" + ileSekund + " sekund - dwo/div>");
+  </script>
+</body>
+</html>
