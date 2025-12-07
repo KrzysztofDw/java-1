@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 24 – Funkcje y1, y2, y3</title>
+</head>
+<body>
+<h1>Zadanie 24 – Kod funkcji y1, y2, y3</h1>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;Użycie funkcji&lt;/title&gt;
+ &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div style="color:blue;font-size:50px;"&gt;
+ &lt;script language="JavaScript"&gt;
+ var x1_dwo=parseFloat(prompt("x1=",""));
+ var x2_dwo=parseFloat(prompt("x2=",""));
+
+ function y1_dwo(x1) {
+ return 3 * Math.pow(x1_dwo, 6/8);
+}
+
+function x1_rad(x1) {
+var st_dwo=x1_dwo;
+return (st_dwo * Math.PI) / 180;
+}
+
+function y2_dwo(x1){
+var st_dwo=x1_dwo;
+var rad_dwo=(st_dwo * Math.PI) / 180;
+return 2 * Math.cos(rad_dwo) + 3 * Math.sin(rad_dwo);
+}
+
+function y3_dwo(x1,x2) {
+var x1_5= Math.pow(x1_dwo, 5);
+var x2_4= Math.pow(x2_dwo, 4);
+var x1_x2= Math.abs(x1_dwo - x2_dwo);
+var pierwiastek= Math.cbrt(x1_5 + 2 * x2_4);
+return pierwiastek * x1_x2;
+}
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

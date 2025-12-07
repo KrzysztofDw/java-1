@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 18 – Kod odległości</title>
+</head>
+<body>
+<h1>Zadanie 18 – Kod odległości</h1>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+ function AB_dwo()
+ {
+var xa_dwo= parseFloat(document.getElementById('xa_dwo').value);
+var xb_dwo= parseFloat(document.getElementById('xb_dwo').value);
+var ya_dwo= parseFloat(document.getElementById('ya_dwo').value);
+var yb_dwo= parseFloat(document.getElementById('yb_dwo').value);
+
+ var x= xa_dwo - xb_dwo;
+ var y= ya_dwo - yb_dwo;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AB= "+pierwiastek+" cm"
+}
+&lt;/script&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

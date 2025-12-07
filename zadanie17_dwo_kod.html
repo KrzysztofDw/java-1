@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 17 – Kod kwadratu</title>
+</head>
+<body>
+<h1>Zadanie 17 – Kod Kwadratu</h1>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;script type="text/javascript"&gt;
+ function pole_dwo()
+ {
+var a_dwo= parseFloat(document.getElementById('dlugosc').value);
+var b_dwo= a_dwo*a_dwo;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_dwo.toFixed(2)+" cm^2";
+ }
+ function obwod_dwo()
+ {
+var a_dwo= parseFloat(document.getElementById('dlugosc').value);
+var b_dwo= 4*a_dwo;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_dwo.toFixed(2)+" cm";
+ }
+&lt;/script&gt;
+
+&lt;h1&gt;Wszystko o KWADRACIE&lt;/h1&gt;
+ Podaj długość boku: &lt;input type="text" id="dlugosc" value="podaj długość"&gt; cm&lt;br&gt;&lt;br&gt;&lt;br&gt;
+ &lt;input type="button" name="pole" value="Oblicz pole" Onclick="pole_dwo()"&gt;&lt;br&gt;&lt;br&gt;
+ &lt;input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_dwo()"&gt;&lt;br&gt;&lt;br&gt;
+ &lt;div style="color:red;font-size:50px;"id="nazwa"&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

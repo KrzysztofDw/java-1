@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 21 – Kod drabiny</title>
+</head>
+<body>
+<h1>Zadanie 21 – Kod drabiny</h1>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language="JavaScript"&gt;
+function drabina(d,x)
+ { 
+  c=parseFloat(d)
+  d=parseFloat(x)
+  drabina_w=Math.sqrt((c*c)+(d*d))
+document.getElementsByName('drab_dwo')[0].value=drabina_w.toFixed(2);
+alert("drabina="+drabina_w.toFixed(2)+" cm");
+pokaz1.innerHTML="drabina="+drabina_w.toFixed(2)+" cm"&lt;br&gt;;
+}
+
+function alfa(d,x)
+{
+c=parseFloat(d)
+d=parseFloat(x)
+var sinA = c/Math.sqrt((c*c)+(d*d));
+var aRad = Math.asin(sinA);
+var aDeg = aRad * (180 / Math.PI);
+alfa_w=aDeg;
+document.getElementsByName('alfa_dwo')[0].value=alfa_w.toFixed(2);
+alert("alfa="+alfa_w.toFixed(2));
+pokaz2.innerHTML="alfa="+alfa_w.toFixed(2)&lt;br&gt;;
+}
+&lt;/script&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

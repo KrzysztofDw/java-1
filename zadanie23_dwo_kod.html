@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 23 – Operacje matematyczne</title>
+</head>
+<body>
+<h1>Zadanie 23 – Kod operacji matematycznych</h1>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;Użycie funkcji&lt;/title&gt;
+ &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div style="color:blue;font-size:50px;"&gt;
+ &lt;script language="JavaScript"&gt;
+ var a_dwo=parseFloat(prompt("a=",""));
+ var b_dwo=parseFloat(prompt("b=",""));
+
+ function suma_dwo(a, b) {
+ return a + b;
+}
+
+function odejmowanie_dwo(a, b) {
+ return a - b;
+}
+
+function mnozenie_dwo(a, b) {
+ return a * b;
+}
+
+function kwadrat_dwo(a) {
+ return a*a;
+}
+
+function dzielenie_dwo(a, b) {
+ return a % b;
+}
+
+ document.write("suma="+suma_dwo(a,b)+"&lt;br&gt;");
+ document.write("odejmowanie="+odejmowanie_dwo(a,b)+"&lt;br&gt;");
+ document.write("mnozenie="+mnozenie_dwo(a,b)+"&lt;br&gt;");
+ document.write(+a+"^2="+kwadrat_dwo(a)+"&lt;br&gt;");
+ document.write(+b+"^2="+kwadrat_dwo(b)+"&lt;br&gt;");
+ document.write("reszta z dzielenia="+dzielenie_dwo(a,b)+"&lt;br&gt;");
+
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

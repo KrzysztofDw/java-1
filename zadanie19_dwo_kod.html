@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 19 – Kod walca</title>
+</head>
+<body>
+<h1>Zadanie 19 – Kod walca</h1>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language="JavaScript"&gt;
+function V(r,h)
+{
+ r_dwo=parseFloat(r)
+ h_dwo=parseFloat(h)
+ V_wynik=Math.PI*r_dwo*r_dwo*h_dwo
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); 
+ alert("V="+V_wynik.toFixed(2)+" cm^3"); 
+ pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"&lt;br&gt;"; 
+}
+function Pc(r,h)
+{
+ r_dwo=parseFloat(r)
+ h_dwo=parseFloat(h)
+ Pc_wynik=2*Math.PI*r_dwo*r_dwo+2*Math.PI*r_dwo*h_dwo
+ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+ alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
+ pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
+}
+&lt;/script&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

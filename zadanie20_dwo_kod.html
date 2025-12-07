@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 20 – Kod prostokąta</title>
+</head>
+<body>
+<h1>Zadanie 20 – Kod prostokąta</h1>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language="JavaScript"&gt;
+function pole(a,b)
+{
+ a_dwo=parseFloat(a)
+ b_dwo=parseFloat(b)
+ pole_dwo=a_dwo*b_dwo
+ document.getElementsByName('pole_wynik')[0].value=pole_dwo.toFixed(2); 
+ alert("pole="+pole_dwo.toFixed(2)+" cm");
+ pokaz1.innerHTML="pole="+pole_dwo.toFixed(2)+"cm";
+}
+function obwod(a,b)
+{
+ a_dwo=parseFloat(a)
+ b_dwo=parseFloat(b)
+ obwod_dwo=2*a_dwo + 2*b_dwo
+ document.getElementsByName('obwod_wynik')[0].value=obwod_dwo.toFixed(2);
+alert("obwod="+obwod_dwo.toFixed(2)+" cm");
+ pokaz2.innerHTML="obwod="+obwod_dwo.toFixed(2)+"cm";
+ 
+}
+&lt;/script&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>
