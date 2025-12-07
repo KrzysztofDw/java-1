@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Przykład użycia funkcji</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:darkgreen; font-size:40px; font-family:Arial, sans-serif;">
+        <script language="JavaScript">
+            var a = parseFloat(prompt("Podaj a:",""));
+            var b = parseFloat(prompt("Podaj b:",""));
+
+            function suma_ski(x, y) {
+                return x + y;
+            }
+
+            function odejmowanie_ski(x, y) {
+                return x - y;
+            }
+
+            function mnozenie_ski(x, y) {
+                return x * y;
+            }
+
+            function kwadrat_ski(x) {
+                return x * x;
+            }
+
+            function dzielenie_ski(x, y) {
+                return x % y;
+            }
+
+            document.write("Suma = " + suma_ski(a,b) + "<br>");
+            document.write("Różnica = " + odejmowanie_ski(a,b) + "<br>");
+            document.write("Iloczyn = " + mnozenie_ski(a,b) + "<br>");
+            document.write(a + "^2 = " + kwadrat_ski(a) + "<br>");
+            document.write(b + "^2 = " + kwadrat_ski(b) + "<br>");
+            document.write("Reszta z dzielenia = " + dzielenie_ski(a,b) + "<br>");
+        </script>
+    </div>
+</body>
+</html>
