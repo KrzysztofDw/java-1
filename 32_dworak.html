@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 32 – Dworak</title>
+</head>
+<body>
+
+<h2>Zadanie 32 – ciężarówka</h2>
+<p>
+Oblicz średnie zużycie paliwa ciężarówki na 100 km.
+</p>
+
+<script>
+  let paliwo = parseFloat(prompt("Podaj ilość zużytego paliwa (l):"));
+  let droga = parseFloat(prompt("Podaj przejechaną drogę (km):"));
+
+  let spalanie = (paliwo / droga) * 100;
+
+  document.write("Średnie spalanie: " + spalanie.toFixed(2) + " l/100km");
+</script>
+
+</body>
+</html>
 
