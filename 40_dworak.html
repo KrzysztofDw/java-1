@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>DWORAK Z40</title>
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+var x=prompt("podaj argument x=","");
+ var x_ski=parseFloat(x);
+ document.write("wykonał adrian skierka <br>");
+ document.write("czytany argument x="+x_ski+"<br>");
+ function f_ski(x_ski) {
+ if(x_ski>=2) {return 9;}
+ if((x_ski>=-2)&&(x_ski<0)) {return x_ski+1*x_ski+1;}
+ if((x_ski=>0)&&(x_ski<2)) {return x_ski*x_ski*x_ski;}
+ if(x_ski<-2) {return 1;}
+}
+ document.write("f("+x_ski+")="+f_ski(x_ski)+"<br>");
+
+ </script>
+</div>
+</body>
+</html>
+<!-- dworak Z40_JS -->
